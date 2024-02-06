@@ -1,0 +1,181 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#login-container
+{
+    height: 100vh;
+
+    /* linear-gradient added to add some black-tone to wallpaper  */
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('bg2.jpg');
+    color:white;
+   
+    background-repeat:no-repeat ;
+    background-size: cover;
+    background-position: center center;
+    padding: 25px;
+    
+}
+
+
+/* login page styling */
+main{
+    
+    /* min-height: 50vh; */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* #playlist-container{
+    background-color:bisque;
+} */
+
+
+
+nav{
+    font-family: 'ubuntu',sans-serif;
+}
+
+nav ul{
+    /* using flex all items get displayed horizontally */
+    display:flex; 
+    align-items: center;
+    /* we don't need any dots in unordered list <ul> */
+    list-style-type: none;
+    height:65px;
+    background-color: black;
+    color: white;
+    
+    
+}
+nav ul li{
+    padding:0px 12px ;
+    
+    
+}
+
+#playlist-container{
+    min-height: 67vh;
+    background-color:bisque;
+    color: white;
+    font-family: 'varela-round',sans-serif;
+    display: flex;
+    width: 70%;
+
+    /* auto used to get container at center */
+    margin: 23px auto;
+
+    border-radius: 12px;
+    /* padding changed to get line inside block */
+    padding: 24px;
+
+    /* background image in container */
+    background-image: url('bg.jpg');
+}
+
+
+
+.brand img{
+    width:65px;
+    padding:0px 8px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    /* rem used to increse font-size of root element */
+    font-weight:bolder;
+    font-size: 1.3rem;
+    
+}
+.bottom{
+    position: sticky;
+    /* An element with position: sticky; is positioned based on the user's scroll position */
+    /* OR SOME FIXED POSITION IS GIVEN TO BOTTOM BAR */
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* JUSTIFY-CONTENT :CENTER ///space between and around content items along the main-axis of a flex container,  */
+    align-items: center;
+    /* in oreder to get play icons at bottom */
+    flex-direction:column;
+}
+
+
+.icons{
+    margin-top: 12px;
+    display: flex;
+    
+}
+
+
+/* i - is icon  */
+.icons i{
+    cursor: pointer;
+    margin-right: 10px;
+
+}
+
+#myProgressbar{
+    width:80vh;
+    cursor: pointer;
+    
+}
+
+
+.songItemContainer{
+    margin-top: 74px;
+    
+}
+
+/* song img and content modification */
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: aliceblue;
+   
+    color: black;
+    margin: 12px 0px; 
+    justify-content: space-between;
+    align-items: center;
+   /* makin border round at end */
+    border-radius: 34px;
+    
+}
+
+.songInfo{
+     font-family: 'varela-round',sans-serif;
+}
+.songItem img{
+    width: 50px;
+    margin: 0 23px;
+    border-radius: 50px;
+    /* chnaged border radius to make it circle */
+
+}
+
+
+.timestamp{
+    /* used to allign elements at required position inside block */
+    margin: 0px 23px;
+   
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.login-section--display.login{
+    display:none;
+}

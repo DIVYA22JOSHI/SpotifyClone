@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Music For Everyone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+    <div id="login-container">
+        <h2><b>Login</b></h2>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="authenticate()">Login</button>
+        </form>
+    </div>
+</main>
+
+    <div id="playlist-container" style="display:none;">
+        
+        <nav>
+            <ul>
+                <li class="brand"><img src="logo1.png.png" alt="spotify logo">spotify</li>
+                <li>Home</li>
+                <li>About</li>
+                <li>All</li>
+                <li>Music</li>
+                <li>Podcast</li>
+
+            </ul>
+        </nav>
+    
+
+
+        <!-- will get dipslayed at right side i.e will act as song container -->
+        <div class="playlist-container">
+
+
+            <h1>Spotify Playlist</h1>
+
+            <!-- div created for container song list -->
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="cover1.jpg" alt="1">
+                    <span>Let me Love You - Dj snake</span>
+                    
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:35<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+                <div class="songItem">
+                    <img src="cover2.jpg" alt="1">
+                    <span>Junnon - Mitraz</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:35<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover3.jpg" alt="1">
+                    <span>Closer - The chainsmoker</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:35<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover4.jpg" alt="1">
+                    <span>Ve kamleya - Asees kaur</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:35<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover5.jpg" alt="1">
+                    <span>Girls like you - Maroon</span>
+                    
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:10<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover6.jpg" alt="1">
+                    <span>Treat you better - Shawn mendes</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:05<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover7.jpg" alt="1">
+                    <span>Senorita - Camilio cabello</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:7<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover8.jpg" alt="1">
+                    <span>Masta - Arijit singh</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:36<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover9.jpg" alt="1">
+                    <span>Kill dil - Arijit singh</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:35<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+
+
+                <div class="songItem">
+                    <img src="cover10.jpg" alt="1">
+                    <span>People - Libiaca</span>
+                    <!-- span used to change color of particular item -->
+                    <span class="songlistplay"><span class="timestamp">05:09<i
+                                class="far fa-1X fa-play-circle"></i></span></span>
+                </div>
+            </div>
+            <div class="Songbanner"></div>
+
+            <!-- will get displayed at bottom like which song is playing preview -next -current button will get apperaed -->
+
+
+            <!-- font awesome icons    website that provides fascinating icons -->
+            <div class="bottom">
+                <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
+
+                <!-- font awesome icons    website that provides fascinating icons like play and pause buttons -->
+                <div class="icons">
+                    <i class="fas fa-2x fa-step-backward"></i>
+                    <i class="far fa-2x fa-play-circle" id="masterPlay"></i>
+                    <i class="fas fa-2x fa-step-forward"></i>
+                </div>
+                <div class="songinfo">let me love you - Justin Beiber</div>
+            </div>
+
+        </div>
+        
+
+    </div>
+    </div>
+    <script src="https://kit.fontawesome.com/58f497d4f5.js" crossorigin="anonymous"></script>
+
+    <!-- linked script.js file -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
